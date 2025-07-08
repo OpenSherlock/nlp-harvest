@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp.api;
+package org.topicqucsts.asr.nlp.api;
 
 import java.io.File;
 

@@ -1,13 +1,12 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp.models;
+package org.topicqucsts.asr.nlp.models;
 
+import org.topicqucsts.asr.nlp.HarvestEnvironment;
+import org.topicqucsts.asr.nlp.api.IParagraphModel;
 import org.topicquests.asr.nlp.api.IParagraph;
 import org.topicquests.support.api.IResult;
-
-import ort.topicqucsts.asr.nlp.HarvestEnvironment;
-import ort.topicqucsts.asr.nlp.api.IParagraphModel;
 
 /**
  * 

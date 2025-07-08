@@ -1,17 +1,16 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp;
+package org.topicqucsts.asr.nlp;
 
+import org.topicqucsts.asr.nlp.api.IDocumentModel;
+import org.topicqucsts.asr.nlp.api.IParagraphModel;
+import org.topicqucsts.asr.nlp.api.IProcessModel;
+import org.topicqucsts.asr.nlp.models.DocumentModel;
+import org.topicqucsts.asr.nlp.models.ParagraphModel;
+import org.topicqucsts.asr.nlp.models.ProcessModel;
 import org.topicquests.asr.nlp.Environment;
 import org.topicquests.pg.PostgresConnectionFactory;
-
-import ort.topicqucsts.asr.nlp.api.IDocumentModel;
-import ort.topicqucsts.asr.nlp.api.IParagraphModel;
-import ort.topicqucsts.asr.nlp.api.IProcessModel;
-import ort.topicqucsts.asr.nlp.models.DocumentModel;
-import ort.topicqucsts.asr.nlp.models.ParagraphModel;
-import ort.topicqucsts.asr.nlp.models.ProcessModel;
 
 /**
  * 
@@ -31,7 +30,7 @@ public class HarvestEnvironment extends Environment {
 		model = new ProcessModel(this);
 		String schemaName = getStringProperty("DatabaseSchema");
 		String dbName = getStringProperty("DatabaseName");
-		dbDriver = new PostgresConnectionFactory(dbName, schemaName);
+		dbDriver = new PostgresConnectionFactory(this, dbName, schemaName);
 
 	}
 
@@ -49,6 +48,12 @@ public class HarvestEnvironment extends Environment {
 	
 	public PostgresConnectionFactory getDatabaseDriver() {
 		return dbDriver;
+	}
+
+	@Override
+	public void shutDown() {
+		// TODO Auto-generated method stub
+		
 	}
 
 

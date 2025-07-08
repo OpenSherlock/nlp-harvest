@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp.api;
+package org.topicqucsts.asr.nlp.api;
 
 import org.topicquests.asr.nlp.api.IDocument;
 import org.topicquests.support.api.IResult;

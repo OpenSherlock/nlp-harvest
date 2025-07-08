@@ -1,18 +1,17 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp.db;
+package org.topicqucsts.asr.nlp.db;
 
 import java.sql.ResultSet;
 
+import org.topicqucsts.asr.nlp.HarvestEnvironment;
+import org.topicqucsts.asr.nlp.api.IDataProvider;
+import org.topicqucsts.asr.nlp.api.ISQL;
 import org.topicquests.pg.PostgresConnectionFactory;
 import org.topicquests.pg.api.IPostgresConnection;
 import org.topicquests.support.ResultPojo;
 import org.topicquests.support.api.IResult;
-
-import ort.topicqucsts.asr.nlp.HarvestEnvironment;
-import ort.topicqucsts.asr.nlp.api.IDataProvider;
-import ort.topicqucsts.asr.nlp.api.ISQL;
 
 /**
  * 

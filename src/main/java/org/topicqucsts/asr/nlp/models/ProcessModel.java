@@ -1,16 +1,15 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp.models;
+package org.topicqucsts.asr.nlp.models;
 
 import java.io.File;
 
+import org.topicqucsts.asr.nlp.HarvestEnvironment;
+import org.topicqucsts.asr.nlp.api.IProcessModel;
 import org.topicquests.asr.nlp.parsers.PMCPullParser;
 import org.topicquests.asr.nlp.parsers.PubMedReportPullParser;
 import org.topicquests.support.api.IResult;
-
-import ort.topicqucsts.asr.nlp.HarvestEnvironment;
-import ort.topicqucsts.asr.nlp.api.IProcessModel;
 
 /**
  * 

@@ -1,15 +1,14 @@
 /**
  * 
  */
-package ort.topicqucsts.asr.nlp.models;
+package org.topicqucsts.asr.nlp.models;
 
+import org.topicqucsts.asr.nlp.HarvestEnvironment;
+import org.topicqucsts.asr.nlp.api.IDocumentModel;
 import org.topicquests.asr.nlp.api.IDocument;
 import org.topicquests.support.api.IResult;
 
 import com.google.gson.JsonArray;
-
-import ort.topicqucsts.asr.nlp.HarvestEnvironment;
-import ort.topicqucsts.asr.nlp.api.IDocumentModel;
 
 /**
  * 
