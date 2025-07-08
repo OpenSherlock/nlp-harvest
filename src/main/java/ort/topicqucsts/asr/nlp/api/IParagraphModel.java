@@ -6,7 +6,7 @@
 package ort.topicqucsts.asr.nlp.api;
 
 import org.topicquests.asr.nlp.api.IParagraph;
-import org.topicquests.asr.nlp.api.IResult;
+import org.topicquests.support.api.IResult;
 
 /**
  * @author jackpark

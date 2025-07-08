@@ -4,7 +4,7 @@
 package ort.topicqucsts.asr.nlp.models;
 
 import org.topicquests.asr.nlp.api.IParagraph;
-import org.topicquests.asr.nlp.api.IResult;
+import org.topicquests.support.api.IResult;
 
 import ort.topicqucsts.asr.nlp.HarvestEnvironment;
 import ort.topicqucsts.asr.nlp.api.IParagraphModel;

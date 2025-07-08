@@ -1,12 +1,12 @@
 /**
  * 
  */
-package org.topicquests.asr.nlp.test;
+package org.topicquests.asr.nlp.tvst;
 
 /**
  * @author jackpark
  */
-public class HarvestTester {
+public class HarvesterTester {
 
 	/**
 	 * @param args

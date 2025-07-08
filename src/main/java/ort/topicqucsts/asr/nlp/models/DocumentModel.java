@@ -4,7 +4,7 @@
 package ort.topicqucsts.asr.nlp.models;
 
 import org.topicquests.asr.nlp.api.IDocument;
-import org.topicquests.asr.nlp.api.IResult;
+import org.topicquests.support.api.IResult;
 
 import com.google.gson.JsonArray;
 

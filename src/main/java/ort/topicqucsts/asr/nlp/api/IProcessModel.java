@@ -5,7 +5,7 @@ package ort.topicqucsts.asr.nlp.api;
 
 import java.io.File;
 
-import org.topicquests.asr.nlp.api.IResult;
+import org.topicquests.support.api.IResult;
 
 /**
  * @author jackpark

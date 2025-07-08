@@ -5,9 +5,9 @@ package ort.topicqucsts.asr.nlp.models;
 
 import java.io.File;
 
-import org.topicquests.asr.nlp.api.IResult;
 import org.topicquests.asr.nlp.parsers.PMCPullParser;
 import org.topicquests.asr.nlp.parsers.PubMedReportPullParser;
+import org.topicquests.support.api.IResult;
 
 import ort.topicqucsts.asr.nlp.HarvestEnvironment;
 import ort.topicqucsts.asr.nlp.api.IProcessModel;

@@ -4,6 +4,7 @@
 package ort.topicqucsts.asr.nlp;
 
 import org.topicquests.asr.nlp.Environment;
+import org.topicquests.pg.PostgresConnectionFactory;
 
 import ort.topicqucsts.asr.nlp.api.IDocumentModel;
 import ort.topicqucsts.asr.nlp.api.IParagraphModel;
@@ -19,6 +20,7 @@ public class HarvestEnvironment extends Environment {
 	private IDocumentModel docModel;
 	private IParagraphModel paraModel;
 	private IProcessModel model;
+	private PostgresConnectionFactory dbDriver = null;
 
 	/**
 	 * @author jackpark
@@ -27,6 +29,9 @@ public class HarvestEnvironment extends Environment {
 		docModel = new DocumentModel(this);
 		paraModel = new ParagraphModel(this);
 		model = new ProcessModel(this);
+		String schemaName = getStringProperty("DatabaseSchema");
+		String dbName = getStringProperty("DatabaseName");
+		dbDriver = new PostgresConnectionFactory(dbName, schemaName);
 
 	}
 
@@ -41,5 +46,10 @@ public class HarvestEnvironment extends Environment {
 	public IProcessModel getModel() {
 		return model;
 	}
+	
+	public PostgresConnectionFactory getDatabaseDriver() {
+		return dbDriver;
+	}
+
 
 }

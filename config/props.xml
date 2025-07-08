@@ -6,4 +6,8 @@
 	<!-- Out to tqos-ingester -->
 	<parameter name="REDIS_TOPIC" value="Stats" /> 
 	
+	<parameter name="DatabaseName" value = "testbigjuice" />
+	<parameter name="DatabaseSchema" value = "public" />
+	
+	
 </properties>
