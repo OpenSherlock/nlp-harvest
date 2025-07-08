@@ -1,0 +1,10 @@
+
+
+# BIGJUICE
+for production, use bigjuice
+psql postgres -c "create database testbigjuice owner tq_admin;" 
+psql testbigjuice -f document-schema.sql
+psql testbigjuice -f paragraph-schema.sql
+psql testbigjuice -f sentence-schema.sql
+
+NOTE: ASR will add wordgrams and triples to this database later
