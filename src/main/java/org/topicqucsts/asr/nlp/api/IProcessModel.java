@@ -36,7 +36,7 @@ public interface IProcessModel {
 	 * @param xml
 	 * @return
 	 */
-	IResult processPMCdXML(File xml);
+	IResult processPMC_XML(File xml);
 	
 	/**
 	 * Process all files in a given directory
